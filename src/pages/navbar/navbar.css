@@ -1,0 +1,4 @@
+.btn:hover{
+    border-bottom: 2px solid blue;
+    outline: "none",
+}
