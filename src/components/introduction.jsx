@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { Typography } from "@mui/material";
 import { motion } from "motion/react";
+import "./style.css"
 import { Typewriter } from "react-simple-typewriter";
 
 const style = {
@@ -92,9 +93,9 @@ export default function Home() {
             animate={{ x: 0, opacity: 1, transition: { duration: 0.8 } }}
           >
             <img
-              src="/image.png"
+              src="/logo/ska1.jpeg"
               alt="Brahim Iskander"
-              style={{ height: "250px", width: "250px" }}
+              style={{ height: "250px", width: "250px", borderRadius: "50%" }}
             />
           </motion.Box>
         </Box>
