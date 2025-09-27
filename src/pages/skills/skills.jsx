@@ -6,19 +6,9 @@ import Container from "@mui/material/Container";
 
 export default function Skills() {
   const frontend = [
-    {
-      name: "HTML",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-    },
-    {
-      name: "CSS",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-    },
-    {
-      name: "JavaScript",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-    },
+    
     { name: "React", logo: "/logo/reactJS.svg" },
+    { name: "Next", logo: "/logo/next.svg" },
     { name: "React Router", logo: "/logo/reactrouter.svg" },
     { name: "Material UI", logo: "/logo/materialui.svg" },
     {
@@ -58,6 +48,9 @@ export default function Skills() {
     {
       name:"SupaBase",
       logo:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+    },{
+      name: "Prisma",
+      logo: "/logo/prisma.svg",
     }
 
     
@@ -85,6 +78,7 @@ export default function Skills() {
       name: "Socket",
       logo: "/logo/ssss.svg",
     },
+    
     {
       name: "Netlify",
       logo: "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg",
@@ -94,6 +88,8 @@ export default function Skills() {
       logo: "/logo/cloudinary.svg",
     },
     { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg", }
+    ,
+    { name: "Neon", logo: "/logo/neon.svg", }
     ,
   ];
 
