@@ -2,12 +2,29 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Footer from "../footer/footer.jsx";
+import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import CardActionArea from "@mui/material/CardActionArea";
 import Chip from "@mui/material/Chip";
 
 export default function Projects() {
+ const techIcons = {
+  "React": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  "Next.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  MongoDB: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  "Express.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  "Material-UI": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+  JavaScript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    FireBase: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  Supabase: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+  HTML: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  CSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  "Socket.io": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+  "AI UI": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
+};
+
+
   const projects = [
     {
       id: 6,
@@ -61,7 +78,7 @@ export default function Projects() {
       web: "https://crud-iskander-brahim.netlify.app/",
       image: "/projectimgage/pms.png",
       title: "CRUDS",
-      technologies: ["Html", "Css", "JavaScript"],
+      technologies: ["HTML", "CSS", "JavaScript"],
       description:
         "⚙️ A basic CRUD web app using HTML, CSS, and JavaScript to create, read, update, and delete data.",
     },
@@ -71,7 +88,9 @@ export default function Projects() {
     <div
       style={{ backgroundColor: "#000000", minHeight: "100vh", color: "white" }}
     >
-      <div style={{ maxWidth: "960px", margin: "80px auto", padding: "0 16px" }}>
+      <div
+        style={{ maxWidth: "960px", margin: "80px auto", padding: "0 16px" }}
+      >
         <div
           style={{
             backgroundColor: "#000000",
@@ -185,6 +204,17 @@ export default function Projects() {
                               key={index}
                               label={tech}
                               size="small"
+                              avatar={
+                                <Avatar
+                                  src={techIcons[tech]}
+                                  alt={tech}
+                                  sx={{
+                                    width: 18,
+                                    height: 18,
+                                    bgcolor: "transparent",
+                                  }}
+                                />
+                              }
                               sx={{
                                 backgroundColor: "#ffffff22",
                                 color: "#ffffff88",
@@ -208,7 +238,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }
