@@ -36,6 +36,13 @@ export default function Projects() {
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
     MySQL:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    PostgreSQL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    jenkins:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+    Docker :
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+   
   };
 
   const projects = [
@@ -63,7 +70,7 @@ export default function Projects() {
       web: "https://makinapack.netlify.app/",
       image: "/projectimgage/makina.png",
       title: "Makina Pack",
-      technologies: ["React", "Express.js", "Node.js", "MongoDB"],
+      technologies: ["React", "Express.js", "Node.js", "MongoDB","Docker"],
       description:
         "📦 A full-stack web app for managing and showcasing packaging solutions with React and Node.js.",
     },
